@@ -1,0 +1,4 @@
+include ':imageselector'
+include ':LibCommon'
+include ':app'
+rootProject.name = "AppCommon"
