@@ -105,7 +105,11 @@ public class MyApplication extends Application
 		MyApplication.context = getApplicationContext();
 		_main = this;
 
+	}
 
+
+	public void InitSDK()
+	{
 		String strPackage = getPackageName();
 		String strTmp = strPackage.substring(4);//"com."
 		String strTmp1 = strTmp.substring(strTmp.indexOf('.') + 1);
@@ -142,5 +146,4 @@ public class MyApplication extends Application
 
 		AdConfigBaidu.main().OnAppInit(this,"","");
 	}
-
 }

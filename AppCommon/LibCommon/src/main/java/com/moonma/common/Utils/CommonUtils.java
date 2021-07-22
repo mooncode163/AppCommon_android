@@ -229,6 +229,10 @@ getFilesDir()方法用于获取/data/data/<application package>/files目录
         return ret;
     }
 
+    public static void OnPrivacyFinish()
+    {
+        MyApplication.main().InitSDK();
+    }
 
 
     public static String getAppVersion()//String key
@@ -353,7 +357,7 @@ getFilesDir()方法用于获取/data/data/<application package>/files目录
 
     public  void showStatusBar_nonstatic(boolean isShow)
     {
-                if(!isShow)
+        if(!isShow)
         {
             sActivity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
             sActivity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
@@ -399,7 +403,7 @@ getFilesDir()方法用于获取/data/data/<application package>/files目录
 
 
 
-       pthis.sStrUrl = strUrl;
+        pthis.sStrUrl = strUrl;
 
         sActivity.runOnUiThread( new Runnable()
         {

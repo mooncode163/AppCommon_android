@@ -24,7 +24,7 @@ import android.widget.FrameLayout;
 
 import java.io.File;
  
-import com.unity3d.player.UnityPlayerActivity;
+//import com.unity3d.player.UnityPlayerActivity;
 
 /**
  * Created by jaykie on 16/5/24.

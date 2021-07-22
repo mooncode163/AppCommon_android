@@ -12,7 +12,7 @@ import socket
  
 
 def cleanbuild():
-    listdir = ["AppCommon/app/build","AppCommon/LibCommon/build","AppCommon/imageselector/build","AppCommon/.idea"]
+    listdir = ["AppCommon/launcher/build","AppCommon/LibCommon/build","AppCommon/imageselector/build","AppCommon/.idea"]
     for dir in listdir:
         flag = os.path.exists(dir)
         if flag: 
